@@ -6,27 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>拳皇</title>
-    <link rel="stylesheet" href="/static/css/index.css">
+    <link rel="stylesheet" href="/static/css/base.css">
     <script src="https://cdn.acwing.com/static/jquery/js/jquery-3.3.1.min.js"></script>
 </head>
 
 <body>
-    <div id="KOF">
-        <div class="kof-head">
-            <div class="kof-head-hp-0">
-                <div></div>
-            </div>
-            <div class="kof-head-timer">60</div>
-            <div class="kof-head-hp-1">
-                <div></div>
-            </div>
-        </div>
-    </div>
+    <div id="kof"></div>
+    <div id="kof1" style="top: 1000px;"></div>
 
     <script type="module">
         import { KOF } from '/static/js/base.js';
 
-        let kof = new KOF('KOF');
+        let kof = new KOF('kof');
+        let kof1 = new KOF('kof1');
     </script>
 </body>
 
